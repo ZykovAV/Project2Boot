@@ -14,6 +14,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void dropUsersTable() {
+        System.out.printf("bla pzdc");
 
     }
 
