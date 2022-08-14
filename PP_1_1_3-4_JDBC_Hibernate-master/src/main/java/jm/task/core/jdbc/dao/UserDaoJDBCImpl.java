@@ -24,7 +24,6 @@ public class UserDaoJDBCImpl implements UserDao {
                     "   PRIMARY KEY (`id`))\n" +
                     "   ENGINE = InnoDB\n" +
                     "   DEFAULT CHARACTER SET = utf8;");
-            System.out.println("Sozdanie vipolneno!");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -33,7 +32,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void dropUsersTable() {
         try (Statement statement = connection.createStatement()) {
-            statement.executeUpdate("DROP TABLE IF EXIST `db_mytest`.`table`");
+            statement.executeUpdate("DROP TABLE IF EXISTS db_mytest.table");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -53,7 +52,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void removeUserById(long id) {
-        try (PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM table WHERE id=?")){
+        try (PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM db_mytest.table WHERE id=?")){
             preparedStatement.setInt(1, (int) id);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -78,7 +77,6 @@ public class UserDaoJDBCImpl implements UserDao {
                 user.setName(resultSet.getString(2));
                 user.setLastName(resultSet.getString(3));
                 user.setAge((byte) resultSet.getInt(4));
-                System.out.println("while in getalluser");
                 System.out.println(user);
                 listUser.add(user);
             }
@@ -90,7 +88,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void cleanUsersTable() {
         try (Statement statement = connection.createStatement()) {
-            statement.executeUpdate("delete from table");
+            statement.executeUpdate("delete from db_mytest.table");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
