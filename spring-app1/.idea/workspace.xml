@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="551c5b49-3ba1-4e3b-b907-1c579ed0e08a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Alishev1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev1/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alishev_annotation1/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PP_1_1_3-4_JDBC_Hiber/TaskJDBC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_spring_01/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tregulov_start_Spring/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_course/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_course/spring_course.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PP_1_1_3-4_JDBC_Hibernate-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PP_1_1_3-4_JDBC_Hibernate-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PP_1_1_3-4_JDBC_Hibernate-master/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PP_1_1_3-4_JDBC_Hibernate-master/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_course/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_course/src/main/java/hibernate.cfg.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Dc82lOgTHMjc471ceHyx1NE26m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37241378&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7a9e204436bfd7426266569be53a0274&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.alishev.springcourse.springcourse" />
+      <recent name="ru.alishev.springcourse" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.alishev.springcourse.TestSpring" />
+      <module name="spring-app1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.alishev.springcourse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestSpring" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="551c5b49-3ba1-4e3b-b907-1c579ed0e08a" name="Changes" comment="" />
+      <created>1660986809400</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660986809400</updated>
+      <workItem from="1660986810723" duration="4137000" />
+      <workItem from="1661018974799" duration="8406000" />
+      <workItem from="1661203335412" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/MusicPlayer.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

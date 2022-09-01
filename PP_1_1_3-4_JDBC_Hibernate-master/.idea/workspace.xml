@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f8afac9-fa0b-4089-87c7-d4f3dc4b57b3" name="Changes" comment="19_08_worked">
-      <change afterPath="$PROJECT_DIR$/../PP_1_1_3-4_JDBC_Hiber/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PP_1_1_3-4_JDBC_Hiber/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +115,8 @@
       <workItem from="1660926774884" duration="258000" />
       <workItem from="1660939850771" duration="11000" />
       <workItem from="1660946845503" duration="12000" />
+      <workItem from="1660947397700" duration="659000" />
+      <workItem from="1660948773539" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1660165212330</created>
