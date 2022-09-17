@@ -2,10 +2,12 @@ package com.example.demo.service;
 
 
 import com.example.demo.models.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserService extends UserDetailsService{
     User getUser(int id);
     List<User> getListUser();
 
@@ -14,5 +16,8 @@ public interface UserService {
     void editUser(User user);
 
     void deleteUser(User user);
+
+    User findByUsername(String username);
+
 
 }
