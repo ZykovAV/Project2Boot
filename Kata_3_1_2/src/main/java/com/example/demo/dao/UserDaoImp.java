@@ -45,7 +45,6 @@ public class UserDaoImp implements UserDao {
     @Override
     @Transactional
     public void editUser(User user) {
-        user.setPassword("123");
         entityManager.merge(user);
     }
 

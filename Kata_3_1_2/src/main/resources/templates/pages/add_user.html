@@ -30,10 +30,13 @@
   <label for="age">Enter age: </label>
   <input type="text" th:field="*{age}" id="age"/>
   <div style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age error</div>
-  <label for="role">Enter role: </label>
-  <input type="text" th:field="*{role}" id="role"/>
-  <div style="color:red" th:if="${#fields.hasErrors('role')}" th:errors="*{role}">role error</div>
-
+  <br/>
+  <br/>
+  <label>Roles:</label>
+  <select size="2" multiple name="roles">
+    <option selected="selected" value="2">USER</option>
+    <option value="1">ADMIN</option>
+  </select>
   <br/>
   <br/>
   <input type="submit" value="Create user"/>

@@ -2,16 +2,15 @@ package com.example.demo.models;
 
 import org.hibernate.validator.constraints.Range;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "users")
@@ -42,8 +41,15 @@ public class User implements UserDetails {
 //    @Range(min = 0, max = 150, message = "Should be between 0 and 150")
     private int age;
 
-    @Column(name = "role")
-    private String role;
+
+    @ManyToMany
+    @JoinTable(
+            name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Set<Role> roles = new HashSet<>();
+
 
 
     public User() {
@@ -87,20 +93,24 @@ public class User implements UserDetails {
         this.age = age;
     }
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
     public void setUsername(String username) {
         this.username = username;
     }
 
     public String getUsername() {
         return username;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+    public void setRoles(Role role) {
+        this.roles.add(role);
     }
 
     @Override
@@ -125,9 +135,12 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        Set<Role> setRole = new HashSet<>();
-        setRole.add(new Role(1, "ROLE_ADMIN"));
-        return setRole;
+//        return roles.stream().map(role -> new SimpleGrantedAuthority(role.getRole())).collect(Collectors.toSet());
+        return getRoles();
+
+//        Set<Role> setRole = new HashSet<>();
+//        setRole.add(new Role(1, "ROLE_ADMIN"));
+//        return setRole;
     }
 
     public String getPassword() {
