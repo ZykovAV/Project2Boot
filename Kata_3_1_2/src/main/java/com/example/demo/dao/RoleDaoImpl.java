@@ -1,15 +1,15 @@
 package com.example.demo.dao;
 
 import com.example.demo.models.Role;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@Repository
 @Transactional
 public class RoleDaoImpl implements RoleDao {
 
@@ -19,7 +19,7 @@ public class RoleDaoImpl implements RoleDao {
     @Override
     @Transactional
     public void addRole(Role role) {
-        if (entityManager.find(Role.class, role.getRole_id()) == null) {
+        if (entityManager.find(Role.class, role.getId()) == null) {
             entityManager.persist(role);
         }
     }
@@ -29,9 +29,16 @@ public class RoleDaoImpl implements RoleDao {
         return entityManager.find(Role.class, id);
     }
 
-    public List<String> getRoles() {
-        List<String> list=entityManager.createQuery("select  r from Role r", Role.class).getResultList()
-                .stream().map(Role::getRole).toList();
+    public List<Role> getRoles() {
+        List<Role> list=entityManager.createQuery("select  r from Role r", Role.class).getResultList();
+
         return list;
+    }
+
+    @Override
+    public Role getRoleByName(String role) {
+        Query query = entityManager.createQuery("SELECT r FROM Role r where r.role=:role", Role.class);
+        query.setParameter("role", role);
+        return (Role) query.getSingleResult();
     }
 }

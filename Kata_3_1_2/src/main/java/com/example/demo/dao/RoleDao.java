@@ -10,6 +10,8 @@ public interface RoleDao {
 
     public Role getRoleById(int id);
 
-    public List<String> getRoles();
+    public List<Role> getRoles();
+
+    public Role getRoleByName(String role);
 
 }

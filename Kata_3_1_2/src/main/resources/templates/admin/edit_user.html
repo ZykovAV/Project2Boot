@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit user</title>
+</head>
+<body>
+<h2>Edit user</h2>
+<form th:method="PATCH" th:action="@{/admin/{id}(id=${user.getId()})}" th:object="${user}">
+  <label for="firstName">First name: </label>
+  <input type="text" style=position:absolute;left:110px; th:field="*{firstName}" id="firstName"/>
+  <div style="color:red" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First name error</div>
+  <br/>
+  <br/>
+  <label for="lastName">Last name: </label>
+  <input type="text" style=position:absolute;left:110px; th:field="*{lastName}" id="lastName"/>
+  <div style="color:red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Last name error</div>
+  <br/>
+  <br/>
+  <label for="age">Age: </label>
+  <input type="text" style=position:absolute;left:110px; th:field="*{age}" id="age"/>
+  <div style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age error</div>
+  <br/>
+  <br/>
+  <label for="username">Username: </label>
+  <input type="text" style=position:absolute;left:110px; th:field="*{username}" id="username"/>
+  <div style="color:red" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username error</div>
+  <br/>
+  <br/>
+  <label for="password">Password: </label>
+  <input type="text" style=position:absolute;left:110px; th:field="*{password}" id="password"/>
+  <div style="color:red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password error</div>
+  <br/>
+  <br/>
+  <label>Roles:</label>
+  <select size="2" multiple name="roles">
+    <option selected="selected" value="ROLE_USER">USER</option>
+    <option value="ROLE_ADMIN">ADMIN</option>
+  </select>
+  <input type="submit" value="Update user"/>
+</form>
+</body>
+</html>

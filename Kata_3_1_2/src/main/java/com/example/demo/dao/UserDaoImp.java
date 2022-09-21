@@ -3,15 +3,17 @@ package com.example.demo.dao;
 import com.example.demo.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.validation.Valid;
 import java.util.List;
 
-@Service
+@Repository
 @Transactional(readOnly = true)
 public class UserDaoImp implements UserDao {
 
@@ -44,7 +46,7 @@ public class UserDaoImp implements UserDao {
 
     @Override
     @Transactional
-    public void editUser(User user) {
+    public void editUser(@Valid User user) {
         entityManager.merge(user);
     }
 

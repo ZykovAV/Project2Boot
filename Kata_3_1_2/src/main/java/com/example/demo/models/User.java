@@ -41,16 +41,13 @@ public class User implements UserDetails {
 //    @Range(min = 0, max = 150, message = "Should be between 0 and 150")
     private int age;
 
-
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
-    private Set<Role> roles = new HashSet<>();
-
-
+    private Set<Role> roles;
 
     public User() {
     }
@@ -109,10 +106,6 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
-    public void setRoles(Role role) {
-        this.roles.add(role);
-    }
-
     @Override
     public boolean isAccountNonExpired() {
         return true;
@@ -136,7 +129,7 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
 //        return roles.stream().map(role -> new SimpleGrantedAuthority(role.getRole())).collect(Collectors.toSet());
-        return getRoles();
+        return roles;
 
 //        Set<Role> setRole = new HashSet<>();
 //        setRole.add(new Role(1, "ROLE_ADMIN"));

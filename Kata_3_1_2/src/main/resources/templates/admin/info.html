@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Info</title>
+</head>
+<body>
+<h2>Admin Info</h2>
+<form th:object="${user}">
+  <p th:text="${user.getFirstName()}"></p>
+  <p th:text="${user.getLastName()}"></p>
+  <p th:text="${user.getAge()}"></p>
+  <p th:text="${user.getUsername()}"></p>
+  <br/>
+  <a th:href="@{/admin/users}">All Users</a>
+</form>
+<br/>
+<form th:action="@{/logout}" th:method="POST">
+  <input type="submit" value="Logout"/>
+</form>
+</body>
+</html>
